@@ -1,0 +1,43 @@
+
+/* Utils */
+div.spacer, div.spacer-md { height: 32px; }
+div.spacer-lg { height: 64px; }
+div.spacer-sm { height: 16px; }
+
+.no-select {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
+}
+
+
+/* INDEX-CONTENT */
+div.pub-box {
+    min-height: 200px;
+    padding: 24px 24px;
+    margin: 24px 12px;
+    border-radius: 4px;
+    font-size: 120%;
+    background-color: #8267D6;
+    color: white;
+}
+
+div.pub-box h1, div.pub-box h2, div.pub-box h3, div.pub-box h4, div.pub-box h5 {
+    color: white;
+}
+
+div.pub-box.red { background-color: #D66767; }
+div.pub-box.yellow { background-color: yellow; }
+
+.btn-pub, .btn-pub:hover, .btn-pub:visited, .btn-pub:link, .btn-pub:active, .btn-pub:focus, .btn-pub:active:focus {
+    background-color: #8267D6;
+    border-color: #675A90;
+    color: white;
+}
+
+.btn-pub-red, .btn-pub-red:hover, .btn-pub-red:visited, .btn-pub-red:link, .btn-pub-red:active, .btn-pub-red:focus, .btn-pub-red:active:focus {
+    background-color: #D66767;
+    border-color: #C13434;
+    color: white;
+}
