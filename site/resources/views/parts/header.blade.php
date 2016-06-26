@@ -19,7 +19,9 @@
                 @include('parts.navbar-search')
                 
                 @if (Auth::guest())
-                <li><a href="{{ url('/login') }}"><i class="fa fa-user"></i> Ingresa</a></li>
+                @if (Request::path() != 'login')
+                <li><a href="{{ url('/login') }}"><i class="fa fa-sign-in"></i> Ingresar</a></li>
+                @endif
                 @else
                 <li><a href="{{ url('/help') }}"><span class="fa fa-question-circle"></span> Ayuda</a></li>
                 <li class="dropdown">

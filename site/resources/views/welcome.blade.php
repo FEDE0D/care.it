@@ -5,20 +5,15 @@
     
     <div class="col-md-12">
         <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-8">
-                    <h1> <i class="fa fa-medkit"></i> Consultorios online!</h1>
-                    <h4>
-                        Red de consultorios médicos y profesionales online.
-                    </h4>
-                </div>
-                <div class="col-md-4 text-right">
-                    @if (Auth::guest())
-                    <h5>Todavía no estás registrado?</h5>
-                    <a href="{{ url('/register') }}" class="btn btn-primary">Regístrate!</a>
-                    @endif
-                </div>
-            </div>
+            <h1> <i class="fa fa-medkit"></i> Consultorios online!</h1>
+            <h4>
+                Red de consultorios médicos y profesionales online.
+            </h4>
+            <div class="spacer"></div>
+            @if (Auth::guest())
+                <h5>Todavía no estás registrado?</h5>
+                <a href="{{ url('/register') }}" class="btn btn-primary"><i class="fa fa-pencil"></i> Regístrate!</a>
+            @endif
         </div>
     </div>
     

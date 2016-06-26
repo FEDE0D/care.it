@@ -73,6 +73,12 @@
                                 </button>
                             </div>
                         </div>
+                        
+                        <div class="text-center text-muted">
+                            <span>Ya estás registrado?</span>
+                            <a class="" href="{{ url('/login') }}">Inicia sesión</a>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
